@@ -8,6 +8,7 @@ import CodeIcon from "@mui/icons-material/Code";
 import Avatar from "@mui/material/Avatar";
 import avatar from "../images/avatar.png";
 import Typography from "@mui/material/Typography";
+import Divider from "@mui/material/Divider";
 
 const NavBar = (props) => {
   const { mobileOpen, width, drawerToggleHandler } = props;
@@ -33,6 +34,7 @@ const NavBar = (props) => {
           Hi, I'm Bamsi
         </Typography>
       </div>
+      <Divider />
       <List>
         {["Home", "Featured Projects", "My Contact", "My Resume"].map(
           (text) => (
