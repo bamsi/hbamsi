@@ -4,7 +4,7 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Typography from "@mui/material/Typography";
 
-const ToolBar = (props) => {
+const MyToolBar = (props) => {
   const { width, drawerToggleHandler } = props;
 
   return (
@@ -30,11 +30,11 @@ const ToolBar = (props) => {
           <MenuIcon />
         </IconButton>
         <Typography variant="h5" noWrap component="h1">
-          Crafting Code, Building Tomorrow.
+          Engineering Excellence in Every Line of Code
         </Typography>
       </Toolbar>
     </AppBar>
   );
 };
 
-export default ToolBar;
+export default MyToolBar;

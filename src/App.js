@@ -1,8 +1,10 @@
-import { Box } from "@mui/material";
+import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
-import ToolBar from "./components/toolbar";
+import MyToolBar from "./components/toolbar";
 import { useState } from "react";
 import NavBar from "./components/navbar";
+import MyHome from "./components/home";
+import Toolbar from "@mui/material/Toolbar";
 
 const navWidth = 250;
 
@@ -16,7 +18,7 @@ function App() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <ToolBar width={navWidth} drawerToggleHandler={handleDrawerToggle} />
+      <MyToolBar width={navWidth} drawerToggleHandler={handleDrawerToggle} />
       <Box
         component="nav"
         sx={{ width: { sm: navWidth }, flexShrink: { sm: 0 } }}
@@ -30,7 +32,10 @@ function App() {
       <Box
         component="main"
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${navWidth}px)` } }}
-      ></Box>
+      >
+        <Toolbar />
+        <MyHome />
+      </Box>
     </Box>
   );
 }
