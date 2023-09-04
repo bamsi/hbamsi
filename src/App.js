@@ -5,6 +5,9 @@ import { useState } from "react";
 import NavBar from "./components/navbar";
 import MyHome from "./components/home";
 import Toolbar from "@mui/material/Toolbar";
+import Container from "@mui/material/Container";
+import MyProjects from "./components/project";
+import MyContact from "./components/myContact";
 
 const navWidth = 250;
 
@@ -31,10 +34,14 @@ function App() {
       </Box>
       <Box
         component="main"
-        sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${navWidth}px)` } }}
+        sx={{ flexGrow: 1, p: 3, width: { md: `calc(100% - ${navWidth}px)` } }}
       >
         <Toolbar />
-        <MyHome />
+        <Container fixed>
+          <MyHome />
+          <MyProjects />
+          <MyContact />
+        </Container>
       </Box>
     </Box>
   );
