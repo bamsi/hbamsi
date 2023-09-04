@@ -9,6 +9,7 @@ import Avatar from "@mui/material/Avatar";
 import avatar from "../images/avatar.png";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
+import MySkills from "./skills";
 
 const NavBar = (props) => {
   const { mobileOpen, width, drawerToggleHandler } = props;
@@ -47,6 +48,16 @@ const NavBar = (props) => {
           </ListItem>
         ))}
       </List>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "flex-end",
+          height: "90%",
+          flexDirection: "column",
+        }}
+      >
+        <MySkills />
+      </div>
     </div>
   );
 

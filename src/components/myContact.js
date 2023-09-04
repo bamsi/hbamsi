@@ -6,6 +6,7 @@ import FormControl from "@mui/material/FormControl";
 import Grid from "@mui/material/Grid";
 import MuiTexField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import { Divider } from "@mui/material";
 
 const MyContact = () => {
   return (
@@ -13,6 +14,7 @@ const MyContact = () => {
       <Typography variant="h4" gutterBottom>
         My Contacts
       </Typography>
+      <Divider />
 
       <Box
         sx={(theme) => ({
@@ -24,6 +26,7 @@ const MyContact = () => {
             display: "flex",
             flexDirection: "row",
           },
+          marginTop: "2rem",
         })}
       >
         <div>

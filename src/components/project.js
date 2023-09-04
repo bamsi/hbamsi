@@ -2,6 +2,7 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import ItemCard from "./itemCard";
+import { Divider } from "@mui/material";
 
 const projectList = [
   {
@@ -22,7 +23,9 @@ const MyProjects = () => {
       <Typography variant="h4" gutterBottom>
         Featured Projects
       </Typography>
-      <Grid container spacing={2}>
+      <Divider />
+
+      <Grid container spacing={2} style={{ marginTop: "2rem" }}>
         {projectList.map((item, index) => (
           <Grid item key={index} xs={12}>
             <ItemCard
