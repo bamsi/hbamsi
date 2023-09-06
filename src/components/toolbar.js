@@ -29,8 +29,15 @@ const MyToolBar = (props) => {
         >
           <MenuIcon />
         </IconButton>
-        <Typography variant="h5" noWrap component="h1">
-          Engineering Excellence in Every Line of Code
+        <Typography
+          variant="h5"
+          noWrap
+          component="h1"
+          sx={{ color: "#008000" }}
+        >
+          <span className="styleFont">
+            # Engineering Excellence in Every Line of Code
+          </span>
         </Typography>
       </Toolbar>
     </AppBar>

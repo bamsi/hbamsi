@@ -5,14 +5,30 @@ import Box from "@mui/material/Box";
 import ResumeButton from "./resumeButton";
 
 const iconList = [
-  { icon: "GitHub", label: "GitHub" },
-  { icon: "Twitter", label: "Twitter" },
-  { icon: "LinkedIn", label: "Linkedin" },
-  { icon: "PanoramaFishEye", label: "Angel" },
-  { icon: "PanoramaFishEye", label: "CodePen" },
-  { icon: "YouTube", label: "Youtube" },
-  { icon: "PanoramaFishEye", label: "StackOverflow" },
-  { icon: "PanoramaFishEye", label: "Unsplash" },
+  { icon: "GitHub", label: "GitHub", url: "https://github.com/bamsi" },
+  { icon: "Twitter", label: "Twitter", url: "https://twitter.com/hibamsi" },
+  {
+    icon: "LinkedIn",
+    label: "Linkedin",
+    url: "https://www.linkedin.com/in/bamsi/",
+  },
+  { icon: "AngelList", label: "AngelList", url: "@bamsi" },
+  {
+    icon: "CodePen",
+    label: "CodePen",
+    url: "https://codepen.io/bamsi-the-sasster",
+  },
+  {
+    icon: "YouTube",
+    label: "Youtube",
+    url: "https://www.youtube.com/@hajiidd1069",
+  },
+  {
+    icon: "StackOverflow",
+    label: "StackOverflow",
+    url: "https://stackoverflow.com/users/19383260",
+  },
+  { icon: "Unsplash", label: "Unsplash", url: "https://unsplash.com/@hibamsi" },
 ];
 
 const MyHome = () => {
@@ -33,9 +49,9 @@ const MyHome = () => {
         Software Engineer
       </Typography>
       <Typography variant="h4" style={{ textAlign: "center" }}>
-        I'm Haji Bamsi, an enthusiastic software developer with experience in
-        developing efficient, functional, reliable, and user-friendly
-        applications.
+        I'm <span style={{ color: "#008000" }}>Haji Bamsi,</span> an
+        enthusiastic software developer with experience in developing efficient,
+        functional, reliable, and user-friendly applications.
       </Typography>
       <Box
         sx={{
@@ -47,7 +63,7 @@ const MyHome = () => {
         <Grid container spacing={2}>
           {iconList.map((item, index) => (
             <Grid item md={3} key={index} style={{ textAlign: "center" }}>
-              <ChipIcon icon={item.icon} label={item.label} />
+              <ChipIcon icon={item.icon} label={item.label} url={item.url} />
             </Grid>
           ))}
         </Grid>

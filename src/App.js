@@ -8,6 +8,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
 import MyProjects from "./components/project";
 import MyContact from "./components/myContact";
+import "./style/index.css";
 
 const navWidth = 250;
 

@@ -10,6 +10,9 @@ import Stack from "@mui/material/Stack";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import Biskop from "../images/biskop.png";
+import Rocket from "../images/rocket.png";
+import Jukwaa from "../images/jukwaa.png";
+import skongaweb from "../images/skongaweb.png";
 
 const ItemCard = (props) => {
   const { img, alt, title, techList, description, github, live } = props;
@@ -18,6 +21,12 @@ const ItemCard = (props) => {
     switch (name) {
       case "biskop":
         return Biskop;
+      case "rocket":
+        return Rocket;
+      case "jukwaa":
+        return Jukwaa;
+      case "skongaweb":
+        return skongaweb;
       default:
         return null;
     }
@@ -40,7 +49,7 @@ const ItemCard = (props) => {
       >
         <CardMedia
           component="img"
-          sx={{ width: "100%", height: "350px;" }}
+          sx={{ height: "350px;", width: 610 }}
           image={imageComponent}
           alt={alt}
         />

@@ -15,6 +15,36 @@ const projectList = [
     github: "https://github.com/bamsi/movie-booking-app-frontend",
     live: "https://exquisite-marigold-3a82c1.netlify.app/",
   },
+  {
+    img: "rocket",
+    alt: "Space Travelers Hub",
+    title: "Space Travelers Hub",
+    techList: ["React/Redux", "CSS3", "Rest API", "Postgres"],
+    description:
+      "A web application for a company that provides commercial and scientific space travel services. This application allows users to book rockets and join selected space missions.",
+    github: "https://github.com/Mikelobi/space-travelers-hub",
+    live: "https://space-hub1.netlify.app/",
+  },
+  {
+    img: "jukwaa",
+    alt: "Jukwaa",
+    title: "Jukwaa",
+    techList: ["Bootstrap", "CSS3", "Javascript", "HTML"],
+    description:
+      "This is a forum for sharing tips about lifestyle diseases. The website has been designed to address the challenge of non communicable disease which is currently affecting lives of young men and women.",
+    github: "https://github.com/bamsi/jukwaa",
+    live: "https://bamsi.github.io/jukwaa/",
+  },
+  {
+    img: "skongaweb",
+    alt: "SkongaWeb",
+    title: "SKongaWeb",
+    techList: ["Angular", "Postgres", "Laravel", "PrimeNG"],
+    description:
+      "This is a school management system designed to manage school operations. The system features include: student Registration, Student Academic Performance, Student Fees, Payment Management, Parent's Feedbac,k and Notice Board",
+    github: "https://github.com/bamsi/skongaweb-ui",
+    live: "https://skongaweb.com/",
+  },
 ];
 
 const MyProjects = () => {
