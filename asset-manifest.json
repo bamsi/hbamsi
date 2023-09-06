@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/hbamsi/static/css/main.41736e4a.css",
+    "main.js": "/hbamsi/static/js/main.52495ded.js",
+    "static/media/jukwaa.png": "/hbamsi/static/media/jukwaa.24b75fd9ddbd82eb93f8.png",
+    "static/media/biskop.png": "/hbamsi/static/media/biskop.b51dd0550773c60777ef.png",
+    "static/media/avatar.png": "/hbamsi/static/media/avatar.0570e983622727031173.png",
+    "static/media/skongaweb.png": "/hbamsi/static/media/skongaweb.e75b2249fbdd327e8eab.png",
+    "static/media/rocket.png": "/hbamsi/static/media/rocket.cdac540798692bab8965.png",
+    "static/media/ruby.png": "/hbamsi/static/media/ruby.881adacec5961a34b0cc.png",
+    "static/media/postgre.png": "/hbamsi/static/media/postgre.a7fa39912c91e079e90b.png",
+    "static/media/react.png": "/hbamsi/static/media/react.86c8d9eba03e29814d2a.png",
+    "static/media/php.png": "/hbamsi/static/media/php.029374a3097c6eea6eb3.png",
+    "static/media/mysql.png": "/hbamsi/static/media/mysql.bdbd1eb709e4c13258d2.png",
+    "static/media/bootstrap.png": "/hbamsi/static/media/bootstrap.268c4375260420e8d982.png",
+    "index.html": "/hbamsi/index.html",
+    "main.41736e4a.css.map": "/hbamsi/static/css/main.41736e4a.css.map",
+    "main.52495ded.js.map": "/hbamsi/static/js/main.52495ded.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41736e4a.css",
+    "static/js/main.52495ded.js"
+  ]
+}
