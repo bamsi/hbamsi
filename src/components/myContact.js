@@ -61,7 +61,7 @@ const MyContact = () => {
     }
   };
   return (
-    <Box style={{ marginTop: "3rem" }}>
+    <Box style={{ marginTop: "3rem" }} id="contact">
       <Typography variant="h4" gutterBottom>
         My Contacts
       </Typography>

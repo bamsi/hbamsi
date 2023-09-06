@@ -49,7 +49,7 @@ const projectList = [
 
 const MyProjects = () => {
   return (
-    <Box style={{ marginTop: "3rem" }}>
+    <Box style={{ marginTop: "3rem" }} id="projects">
       <Typography variant="h4" gutterBottom>
         Featured Projects
       </Typography>

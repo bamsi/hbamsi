@@ -11,6 +11,11 @@ import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import MySkills from "./skills";
 
+const menuItems = [
+  { label: "Home", link: "#home" },
+  { label: "Featured Projects", link: "#projects" },
+  { label: "My Contact", link: "#contact" },
+];
 const NavBar = (props) => {
   const { mobileOpen, width, drawerToggleHandler } = props;
 
@@ -37,13 +42,13 @@ const NavBar = (props) => {
       </div>
       <Divider />
       <List>
-        {["Home", "Featured Projects", "About Me", "My Contact"].map((text) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
+        {menuItems.map((item, key) => (
+          <ListItem key={key} disablePadding>
+            <ListItemButton component="a" href={item.link}>
               <ListItemIcon>
                 <CodeIcon />
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText primary={item.label} />
             </ListItemButton>
           </ListItem>
         ))}

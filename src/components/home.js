@@ -40,6 +40,7 @@ const MyHome = () => {
         justifyContent: "center",
         flexDirection: "column",
       }}
+      id="home"
     >
       <Typography
         variant="h2"

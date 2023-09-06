@@ -1,5 +1,5 @@
 import Grid from "@mui/material/Grid";
-import Github from "../images/github.png";
+import React from "../images/react.png";
 import Ruby from "../images/ruby.png";
 import Php from "../images/php.png";
 import Javascript from "../images/java-script.png";
@@ -16,34 +16,6 @@ import Typography from "@mui/material/Typography";
 
 const iconList = [
   {
-    img: "ruby",
-    title: "Ruby on Rails",
-  },
-  {
-    img: "php",
-    title: "PHP",
-  },
-  {
-    img: "javascript",
-    title: "JavaScript",
-  },
-  {
-    img: "mysql",
-    title: "MySql",
-  },
-  {
-    img: "postgres",
-    title: "Postgres",
-  },
-  {
-    img: "bootstrap",
-    title: "BootStrap",
-  },
-  {
-    img: "github",
-    title: "GitHub",
-  },
-  {
     img: "html",
     title: "HTML5",
   },
@@ -52,16 +24,47 @@ const iconList = [
     title: "CSS3",
   },
   {
-    img: "angular",
-    title: "Angular",
+    img: "javascript",
+    title: "JavaScript",
   },
+  {
+    img: "typescript",
+    title: "Typescript",
+  },
+
   {
     img: "material",
     title: "Material",
   },
   {
-    img: "typescript",
-    title: "Typescript",
+    img: "bootstrap",
+    title: "BootStrap",
+  },
+  {
+    img: "react",
+    title: "React",
+  },
+
+  {
+    img: "angular",
+    title: "Angular",
+  },
+  {
+    img: "ruby",
+    title: "Ruby on Rails",
+  },
+  {
+    img: "php",
+    title: "PHP",
+  },
+
+  {
+    img: "mysql",
+    title: "MySql",
+  },
+  {
+    img: "postgres",
+    title: "Postgres",
   },
 ];
 const MySkills = () => {
@@ -85,8 +88,8 @@ const MySkills = () => {
         return Postgres;
       case "bootstrap":
         return Bootstrap;
-      case "github":
-        return Github;
+      case "react":
+        return React;
       case "angular":
         return Angular;
       case "material":
@@ -99,14 +102,14 @@ const MySkills = () => {
   return (
     <>
       <Typography
-        variant="h6"
+        variant="h5"
         noWrap
         style={{ display: "flex", justifyContent: "center" }}
       >
         My Skills
       </Typography>
 
-      <Grid container spacing={2}>
+      <Grid container spacing={2} sx={{ marginTop: "8px" }}>
         {iconList.map((item, index) => (
           <Grid
             item
