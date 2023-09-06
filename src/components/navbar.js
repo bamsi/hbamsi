@@ -16,6 +16,15 @@ const menuItems = [
   { label: "Featured Projects", link: "#projects" },
   { label: "My Contact", link: "#contact" },
 ];
+
+const styles = {
+  listItem: {
+    "&:hover": {
+      backgroundColor: "#CAF0C7",
+    },
+  },
+};
+
 const NavBar = (props) => {
   const { mobileOpen, width, drawerToggleHandler } = props;
 
@@ -44,7 +53,7 @@ const NavBar = (props) => {
       <List>
         {menuItems.map((item, key) => (
           <ListItem key={key} disablePadding>
-            <ListItemButton component="a" href={item.link}>
+            <ListItemButton component="a" href={item.link} sx={styles.listItem}>
               <ListItemIcon>
                 <CodeIcon />
               </ListItemIcon>
