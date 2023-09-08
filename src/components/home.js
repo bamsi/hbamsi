@@ -3,6 +3,8 @@ import Grid from "@mui/material/Grid";
 import ChipIcon from "./chipIcon";
 import Box from "@mui/material/Box";
 import ResumeButton from "./resumeButton";
+import theaterJS from "theaterjs";
+import { useEffect } from "react";
 
 const iconList = [
   { icon: "GitHub", label: "GitHub", url: "https://github.com/bamsi" },
@@ -31,7 +33,45 @@ const iconList = [
   { icon: "Unsplash", label: "Unsplash", url: "https://unsplash.com/@hibamsi" },
 ];
 
+const typeText = () => {
+  let theater = theaterJS({ autoplay: true, minSpeed: 120, maxSpeed: 650 });
+  theater
+    .on("type:start, erase:start", function () {
+      var actor = theater.getCurrentActor();
+      actor.$element.classList.add("is-typing");
+    })
+    .on("type:end, erase:end", function () {
+      var actor = theater.getCurrentActor();
+      actor.$element.classList.remove("is-typing");
+    });
+  theater.addActor("bio1", { speed: 0.2, accuracy: 1 });
+  theater.addActor("bio2", { speed: 0.2, accuracy: 1 });
+
+  theater
+    .addScene("bio1: I'm Haji Bamsi, ", 600)
+    .addScene(
+      "an enthusiastic software developer ",
+      200,
+      "with experience ",
+      600
+    )
+    .addScene("bio2: in developing efficient,", 400)
+    .addScene(
+      " functional, ",
+      400,
+      " reliable, ",
+      400,
+      " and user-friendly applications."
+    );
+};
+
 const MyHome = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      typeText();
+    }, 6000);
+  });
+
   return (
     <Box
       sx={{
@@ -50,9 +90,8 @@ const MyHome = () => {
         Software Engineer
       </Typography>
       <Typography variant="h4" style={{ textAlign: "center" }}>
-        I'm <span style={{ color: "#008000" }}>Haji Bamsi,</span> an
-        enthusiastic software developer with experience in developing efficient,
-        functional, reliable, and user-friendly applications.
+        <div id="bio1"></div>
+        <div id="bio2"></div>
       </Typography>
       <Box
         sx={{

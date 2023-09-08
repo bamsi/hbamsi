@@ -4,8 +4,9 @@ import LaunchIcon from "@mui/icons-material/Launch";
 const ResumeButton = () => {
   const handleClick = () => {
     const url =
-      "https://docs.google.com/document/d/10gKoPyIX3vMsCWv_Ha9J_KrXk5DXhPUAWlnWvz4AlPE/edit?usp=sharing";
-    window.open(url, "_blank");
+      "https://drive.google.com/file/d/1J0vrgqLFWXF7eoNjru9tpOU2pBi6ctvk/view?usp=sharing";
+    window.open(url, "_blank", "fullscreen=yes");
+    return false;
   };
   return (
     <Button
