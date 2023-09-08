@@ -49,7 +49,15 @@ const ItemCard = (props) => {
       >
         <CardMedia
           component="img"
-          sx={{ height: "350px;", width: 610 }}
+          sx={(theme) => ({
+            [theme.breakpoints.down("md")]: {
+              height: "350px;",
+            },
+            [theme.breakpoints.up("md")]: {
+              height: "350px;",
+              width: "50%",
+            },
+          })}
           image={imageComponent}
           alt={alt}
         />

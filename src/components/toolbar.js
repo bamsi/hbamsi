@@ -11,8 +11,8 @@ const MyToolBar = (props) => {
     <AppBar
       position="fixed"
       sx={{
-        width: { sm: `calc(100% - ${width}px)` },
-        ml: { sm: `${width}px` },
+        width: { md: `calc(100% - ${width}px)` },
+        ml: { md: `${width}px` },
         backgroundColor: "secondary.contrastText",
         "&:hover": {
           backgroundColor: "#f5f5f5",
@@ -25,7 +25,7 @@ const MyToolBar = (props) => {
           color="inherit"
           edge="start"
           onClick={drawerToggleHandler}
-          sx={{ mr: 2, display: { sm: "none" } }}
+          sx={{ mr: 2, display: { md: "none" } }}
         >
           <MenuIcon />
         </IconButton>

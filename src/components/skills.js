@@ -115,9 +115,21 @@ const MySkills = () => {
             item
             md={4}
             key={index}
-            sx={{ display: "flex", justifyContent: "center" }}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              padding: "5px",
+            }}
           >
-            <Avatar src={getImg(item.img)} alt={item.title} variant="square" />
+            <Avatar
+              src={getImg(item.img)}
+              alt={item.title}
+              variant="square"
+              sx={{
+                boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
+                padding: "3px",
+              }}
+            />
           </Grid>
         ))}
       </Grid>
