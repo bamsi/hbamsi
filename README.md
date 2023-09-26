@@ -8,7 +8,7 @@ React, Material UI & CSS
 
 ## Live Demo
 
-Live Demo Link [http://localhost:3000](http://localhost:3000)
+Live Demo  [Link](https://bamsi.github.io/hbamsi/)
 
 ## Getting Started
 
